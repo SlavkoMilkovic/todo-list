@@ -7,6 +7,8 @@ function Header() {
 			<h1>TodoList</h1>
 			<Link style={linkStyle} to="/">Home</Link>
 			<Link style={linkStyle} to="/about">About</Link>
+			<Link style={linkStyle} to="/fantasy">Fantasy</Link>
+		
 		</header>
 	)
 }

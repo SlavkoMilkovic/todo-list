@@ -4,7 +4,7 @@ import Todos from './components/Todos';
 import Header from './components/leyout/Header';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
-// import Fantasy from './components/pages/Fantasy';
+import Fantasy from './components/pages/Fantasy';
 
 
 class App extends Component  {
@@ -64,19 +64,16 @@ class App extends Component  {
               <About />
             </React.Fragment>
           )} />
+          <Route path="/fantasy" render={props => (
+            <React.Fragment>
+              <Fantasy />
+            </React.Fragment>
+          )} />
         </div>    
       </div>
     </Router>
   );
  }
-
-//  render() {
-//   return (
-//     <Fantasy />
-//     );
-//  }
-
-
 }
 
 export default App;
