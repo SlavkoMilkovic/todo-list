@@ -30,7 +30,7 @@ class Lists extends Component {
 			
 	}
 
-	renderPosts = (post) => {
+	renderPosts = post => {
 		return (
 			<h4 key={post.id} style={style.textStyle}>
 				{post.title}
