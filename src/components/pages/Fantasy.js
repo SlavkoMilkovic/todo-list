@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HeaderFantasy from './HeaderFantasy.js';
-import Lists from './Lists.js';
+import Schedule from './Schedule.js';
+// import Lists from './Lists.js'; <Lists />
 
 
 
@@ -11,7 +12,7 @@ class Fantasy extends Component {
 		return(
 			<div>
 				<HeaderFantasy />
-				<Lists />
+				<Schedule />
 			</div>
 		)
 	}
