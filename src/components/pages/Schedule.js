@@ -10,94 +10,102 @@ class Schedule extends Component {
 				name: 'ARS',
 				rating: 5,
 				opponents: [{
-					name: 'WAT', 
-					isHome: true 
-				},{ 
 					name: 'NEW', 
 					isHome: false 
-				},{
-					name: 'MUN', 
+				},{ 
+					name: 'BUR', 
 					isHome: true 
 				},{
-					name: 'MUN', 
+					name: 'LIV', 
+					isHome: false 
+				},{
+					name: 'TOT', 
 					isHome: true 
 				},{
-					name: 'MUN', 
+					name: 'WAT', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'AVI',
+				rating: 2,
+				opponents: [{
+					name: 'TOT', 
+					isHome: false 
+				},{ 
+					name: 'BOU', 
 					isHome: true 
 				},{
-					name: 'MUN', 
+					name: 'EVE', 
+					isHome: true 
+				},{
+					name: 'CRY', 
+					isHome: false 
+				},{
+					name: 'WES', 
 					isHome: true 
 				}]
 			},
 			{
-				name: 'MUN',
-				rating: 5,
+				name: 'BOU',
+				rating: 3,
 				opponents: [{
-					name: 'WOL', 
-					isHome: false 
-				},{ 
-					name: 'TOT', 
-					isHome: true 
-				},{
-					name: 'ARS', 
-					isHome: false 
-				},{
-					name: 'MUN', 
-					isHome: true 
-				},{
-					name: 'MUN', 
-					isHome: true 
-				},{
-					name: 'MUN', 
-					isHome: true 
-				}]
-			},
-						{
-				name: 'ARS',
-				rating: 5,
-				opponents: [{
-					name: 'WAT', 
+					name: 'SHE', 
 					isHome: true 
 				},{ 
-					name: 'NEW', 
+					name: 'AVI', 
 					isHome: false 
 				},{
-					name: 'MUN', 
+					name: 'MCY', 
 					isHome: true 
 				},{
-					name: 'MUN', 
-					isHome: true 
+					name: 'LEI', 
+					isHome: false 
 				},{
-					name: 'MUN', 
-					isHome: true 
-				},{
-					name: 'MUN', 
+					name: 'EVE', 
 					isHome: true 
 				}]
 			},
 			{
-				name: 'MUN',
-				rating: 5,
+				name: 'BRI',
+				rating: 2,
 				opponents: [{
-					name: 'WOL', 
+					name: 'WAT', 
 					isHome: false 
 				},{ 
-					name: 'TOT', 
+					name: 'WES', 
 					isHome: true 
 				},{
-					name: 'ARS', 
+					name: 'SOU', 
+					isHome: true 
+				},{
+					name: 'MCY', 
 					isHome: false 
 				},{
-					name: 'MUN', 
-					isHome: true 
-				},{
-					name: 'MUN', 
-					isHome: true 
-				},{
-					name: 'MUN', 
+					name: 'BUR', 
 					isHome: true 
 				}]
 			},
+			{
+				name: 'BUR',
+				rating: 2,
+				opponents: [{
+					name: 'SOU', 
+					isHome: true 
+				},{ 
+					name: 'ARS', 
+					isHome: false 
+				},{
+					name: 'WOL', 
+					isHome: false 
+				},{
+					name: 'LIV', 
+					isHome: true 
+				},{
+					name: 'BRI', 
+					isHome: false 
+				}]
+			}
 		]
 	};
 
@@ -117,7 +125,7 @@ class Schedule extends Component {
 	renderTeam = (team) => {
 		return(
 			<div style={styles.teamContainer}>
-				<h4 style={styles.teamName}>{team.name}</h4>
+				<h3 style={styles.teamName}>{team.name}</h3>
 				{team.opponents.map(this.renderOpponents)}
 			</div>
 		)
@@ -148,9 +156,7 @@ const styles = {
 		flexDirection: 'row',
 		justifyContent: 'center',
 		alignItems: 'center',
-		borderWidth: '3px',
-		borderColor: '#37003c',
-		backgroundColor: 'red',
+		backgroundColor: 'yellow',
 		width: '80px'
 
 	},
