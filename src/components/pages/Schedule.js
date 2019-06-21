@@ -104,6 +104,46 @@ class Schedule extends Component {
 				},{
 					name: 'BRI', 
 					isHome: false 
+				}] 
+			},
+			{
+				name: 'CHE',
+				rating: 4,
+				opponents: [{
+					name: 'MUN', 
+					isHome: false 
+				},{ 
+					name: 'LEI', 
+					isHome: true 
+				},{
+					name: 'NOR', 
+					isHome: false 
+				},{
+					name: 'SHE', 
+					isHome: true 
+				},{
+					name: 'WOL', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'CRY',
+				rating: 3,
+				opponents: [{
+					name: 'EVE', 
+					isHome: true 
+				},{ 
+					name: 'SHE', 
+					isHome: false 
+				},{
+					name: 'MUN', 
+					isHome: false 
+				},{
+					name: 'AVI', 
+					isHome: true 
+				},{
+					name: 'TOT', 
+					isHome: false 
 				}]
 			}
 		]
@@ -157,7 +197,9 @@ const styles = {
 		justifyContent: 'center',
 		alignItems: 'center',
 		backgroundColor: 'yellow',
-		width: '80px'
+		width: '80px',
+		border: '1px solid black',
+		margin: '5px'
 
 	},
 	opponentName: {
