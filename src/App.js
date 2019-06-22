@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
+import ReactFontFace from 'react-font-face';
 import Todos from './components/Todos';
 import Header from './components/leyout/Header';
 import AddTodo from './components/AddTodo';

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-
-
 class Schedule extends Component {
 
 	state = {
@@ -145,6 +143,266 @@ class Schedule extends Component {
 					name: 'TOT', 
 					isHome: false 
 				}]
+			},
+			{
+				name: 'EVE',
+				rating: 3,
+				opponents: [{
+					name: 'CRY', 
+					isHome: false 
+				},{ 
+					name: 'WAT', 
+					isHome: true 
+				},{
+					name: 'AST', 
+					isHome: false 
+				},{
+					name: 'WOL', 
+					isHome: true 
+				},{
+					name: 'BOU', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'LEI',
+				rating: 3,
+				opponents: [{
+					name: 'WOL', 
+					isHome: true 
+				},{ 
+					name: 'CHE', 
+					isHome: false 
+				},{
+					name: 'SHE', 
+					isHome: false 
+				},{
+					name: 'BOU', 
+					isHome: true 
+				},{
+					name: 'MUN', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'LIV',
+				rating: 5,
+				opponents: [{
+					name: 'NOR', 
+					isHome: true 
+				},{ 
+					name: 'SOU', 
+					isHome: false 
+				},{
+					name: 'ARS', 
+					isHome: true 
+				},{
+					name: 'BUR', 
+					isHome: false 
+				},{
+					name: 'NEW', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'MCY',
+				rating: 5,
+				opponents: [{
+					name: 'WHU', 
+					isHome: false 
+				},{ 
+					name: 'TOT', 
+					isHome: true 
+				},{
+					name: 'BOU', 
+					isHome: false 
+				},{
+					name: 'BRI', 
+					isHome: true 
+				},{
+					name: 'NOR', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'MUN',
+				rating: 4,
+				opponents: [{
+					name: 'CHE', 
+					isHome: true 
+				},{ 
+					name: 'WOL', 
+					isHome: false 
+				},{
+					name: 'CRY', 
+					isHome: true 
+				},{
+					name: 'SOU', 
+					isHome: false 
+				},{
+					name: 'LEI', 
+					isHome: true 
+				}]
+			},
+			{
+				name: 'NEW',
+				rating: 3,
+				opponents: [{
+					name: 'ARS', 
+					isHome: true 
+				},{ 
+					name: 'NOR', 
+					isHome: false 
+				},{
+					name: 'TOT', 
+					isHome: false 
+				},{
+					name: 'WAT', 
+					isHome: true 
+				},{
+					name: 'LIV', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'NOR',
+				rating: 2,
+				opponents: [{
+					name: 'LIV', 
+					isHome: false 
+				},{ 
+					name: 'NEW', 
+					isHome: true 
+				},{
+					name: 'CHE', 
+					isHome: true 
+				},{
+					name: 'WHU', 
+					isHome: false 
+				},{
+					name: 'MCY', 
+					isHome: true 
+				}]
+			},
+			{
+				name: 'SHE',
+				rating: 2,
+				opponents: [{
+					name: 'BOU', 
+					isHome: false 
+				},{ 
+					name: 'CRY', 
+					isHome: true 
+				},{
+					name: 'LEI', 
+					isHome: true 
+				},{
+					name: 'CHE', 
+					isHome: false 
+				},{
+					name: 'SOU', 
+					isHome: true 
+				}]
+			},
+			{
+				name: 'SOU',
+				rating: 2,
+				opponents: [{
+					name: 'BUR', 
+					isHome: false 
+				},{ 
+					name: 'LIV', 
+					isHome: true 
+				},{
+					name: 'BRI', 
+					isHome: false 
+				},{
+					name: 'MUN', 
+					isHome: true 
+				},{
+					name: 'SHE', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'TOT',
+				rating: 4,
+				opponents: [{
+					name: 'AVI', 
+					isHome: true 
+				},{ 
+					name: 'MCY', 
+					isHome: false 
+				},{
+					name: 'NEW', 
+					isHome: true 
+				},{
+					name: 'ARS', 
+					isHome: false 
+				},{
+					name: 'CRY', 
+					isHome: true 
+				}]
+			},
+			{
+				name: 'WAT',
+				rating: 3,
+				opponents: [{
+					name: 'BRI', 
+					isHome: true 
+				},{ 
+					name: 'EVE', 
+					isHome: false 
+				},{
+					name: 'WHU', 
+					isHome: true 
+				},{
+					name: 'NEW', 
+					isHome: false 
+				},{
+					name: 'ARS', 
+					isHome: true 
+				}]
+			},
+			{
+				name: 'WHU',
+				rating: 3,
+				opponents: [{
+					name: 'MCY', 
+					isHome: true 
+				},{ 
+					name: 'BRI', 
+					isHome: false 
+				},{
+					name: 'WAT', 
+					isHome: false 
+				},{
+					name: 'NOR', 
+					isHome: true 
+				},{
+					name: 'AVI', 
+					isHome: false 
+				}]
+			},
+			{
+				name: 'WOL',
+				rating: 3,
+				opponents: [{
+					name: 'LEI', 
+					isHome: false 
+				},{ 
+					name: 'MUN', 
+					isHome: true 
+				},{
+					name: 'BUR', 
+					isHome: true 
+				},{
+					name: 'EVE', 
+					isHome: false 
+				},{
+					name: 'CHE', 
+					isHome: true 
+				}]
 			}
 		]
 	};
@@ -165,7 +423,7 @@ class Schedule extends Component {
 	renderTeam = (team) => {
 		return(
 			<div style={styles.teamContainer}>
-				<h3 style={styles.teamName}>{team.name}</h3>
+				<h2 style={styles.teamName}>{team.name}</h2>
 				{team.opponents.map(this.renderOpponents)}
 			</div>
 		)
@@ -183,15 +441,17 @@ class Schedule extends Component {
 const styles = {
 	teamContainer: {
 		display: 'flex',
-		// flex: 1,
+		fontFamily: 'Quicksand',
 		flexDirection: 'row',
 		justifyContent: 'space-around',
+		
 	},
 	teamName: {
 		width: '100px'
 	},
 	opponentsContainer: {
 		display: 'flex',
+
 		// flex: 8,
 		flexDirection: 'row',
 		justifyContent: 'center',
