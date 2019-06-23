@@ -409,20 +409,18 @@ class Schedule extends Component {
 
 	getOpponentRating = (opponent) => this.state.teams.find(team => team.name === opponent.name).rating
 
-	homeAdvantage = (opponent) => opponent.isHome
-
 	getBackgroundColor = (opponent) =>
-		this.getOpponentRating(opponent) === 2 && this.homeAdvantage(opponent)
+		this.getOpponentRating(opponent) === 2 && opponent.isHome
 			? { backgroundColor: 'green' }
-			: this.getOpponentRating(opponent) === 2 && !this.homeAdvantage(opponent)
+			: this.getOpponentRating(opponent) === 2 && !opponent.isHome
 				? { backgroundColor: '#eaffec' }
-				: this.getOpponentRating(opponent) === 3 && this.homeAdvantage(opponent)
+				: this.getOpponentRating(opponent) === 3 && opponent.isHome
 					? { backgroundColor: 'lightGreen' }
-					: this.getOpponentRating(opponent) === 3 && !this.homeAdvantage(opponent)
+					: this.getOpponentRating(opponent) === 3 && !opponent.isHome
 						? { backgroundColor: '#ffe8e8' }
-						: this.getOpponentRating(opponent) === 4 && this.homeAdvantage(opponent)
+						: this.getOpponentRating(opponent) === 4 && opponent.isHome
 							? { backgroundColor: '#f28e8e' }
-							: this.getOpponentRating(opponent) === 4 && !this.homeAdvantage(opponent)
+							: this.getOpponentRating(opponent) === 4 && !opponent.isHome
 								? { backgroundColor: 'red' }
 								: this.getOpponentRating(opponent) === 5
 									? { backgroundColor: 'red' }
