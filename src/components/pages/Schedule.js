@@ -69,7 +69,6 @@ const styles = {
 	},
 	opponentsContainer: {
 		display: 'flex',
-
 		padding: 10,
 		flexDirection: 'row',
 		justifyContent: 'center',

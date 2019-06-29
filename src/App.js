@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
-import ReactFontFace from 'react-font-face';
 import Todos from './components/Todos';
 import Header from './components/leyout/Header';
 import AddTodo from './components/AddTodo';
 import About from './components/pages/About';
 import Fantasy from './components/pages/Fantasy';
+import Players from './components/pages/Players';
 
 
 class App extends Component  {
@@ -63,6 +63,11 @@ class App extends Component  {
           <Route path="/about" render={props => (
             <React.Fragment>
               <About />
+            </React.Fragment>
+          )} />
+          <Route path="/players" render={props => (
+            <React.Fragment>
+              <Players />
             </React.Fragment>
           )} />
           <Route path="/fantasy" render={props => (
