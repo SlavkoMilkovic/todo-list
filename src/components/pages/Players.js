@@ -7,47 +7,42 @@ class Players extends Component {
 	state = {
 		players: [{
 			name: 'Max Aarons',
-			info:  [{position: 'RB',
-					team: 'NOR',
-					assists: 6,
-					goals: 2}]
+			info: {
+				position: 'RB',
+				team: 'NOR',
+				assists: 6,
+				goals: 2
+			}
 		},
 		{
 			name: 'Slavko Milkovic',
-			info:  [{position: 'RB',
-					 team: 'NOR',
-					 assists: 6,
-					 goals: 2}]
+			info: {
+				position: 'RB',
+				team: 'NOR',
+				assists: 6,
+				goals: 2
+			}
 		}]
 	};
 
-	renderItems = (items) => {
+	renderPlayers = (player) => {
 		return(
-			<div style={styles.itemsContainer}>
-				{items.position}
-				{items.team}
-				{items.assists}
-				{items.goals}
-			</div>
-		)
-	}
-
-
-	playerInfo = (player) => {
-		return(
-			<div>
-				<div style={styles.playerContainer}>
-					{player.name}
-					{player.info.map(items => this.renderItems(items))}
-				</div>
+			<div style={styles.playerCard}>
+				<div>{player.name}</div>
+				<div>{player.info.position}</div>
+				<div>{player.info.team}</div>
+				<div>{player.info.assists}</div>
+				<div>{player.info.goals}</div>
 			</div>
 		)
 	}
 
 	renderPlayer = () => {
 		return(
-			<div>
-				{this.state.players.map(player => this.playerInfo(player))}
+			<div style={styles.container}>
+				<div style={styles.playersContainer}>
+					{this.state.players.map(player => this.renderPlayers(player))}
+				</div>
 			</div>
 		)
 	}
@@ -65,20 +60,32 @@ class Players extends Component {
 
 
 const styles = {
-	playerContainer: {
+	container: {
+		width: '100%',
+		height: '100%',
+	},
+	playersContainer: {
 		display: 'flex',
-		padding: 10,
 		flexDirection: 'row',
+		flexWrap: 'wrap'
+
+	},
+	playerCard: {
+		display: 'flex',
+		backgroundColor: 'red',
+		width: 200,
+		height: 300,
+		margin: 20,
+		borderRadius: 7,
+		flexDirection: 'column',
 		justifyContent: 'space-around',
-		alignItems: 'center',
-		backgroundColor: 'yellow',
-		border: '1px solid black',
-		marginBottom: '20px'
+		alignItems: 'center'
 	},
 	itemsContainer: {
 		display: 'flex',
 		justifyContent: 'space-around',
-		alignItems: 'center'
+		alignItems: 'center',
+		flexDirection: 'column'
 	}
 
 }
